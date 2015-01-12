@@ -7,15 +7,17 @@
 
 void main(){
 	Vector primes;
+	int num_primes;
+	int current_prime;
+	int i;
+
 	vector_init(&primes);
 
-	int num_primes;
-	printf("How many primes do you want to generate: \t");
+	
+	printf("How many primes do you want to generate?: \t");
 	scanf_s("%d", &num_primes);
 
-	int current_prime;
-
-	int i;
+	
 	for (i = 0; i < num_primes; ++i){
 		int is_prime = TRUE;
 		if (i == 0)
